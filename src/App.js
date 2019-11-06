@@ -20,6 +20,17 @@ class App extends Component {
     return quotes[randomQuoteIndex];
   } 
 
+
+  //Function to generate a random color from R: 0-154, G: 0-154, B: 0-154
+  getRandomColor = upperBound => {
+    const color = `rgb(
+      ${Math.floor(Math.random() * upperBound)},
+      ${Math.floor(Math.random() * upperBound)},
+      ${Math.floor(Math.random() * upperBound)}
+    )`;
+    return color;
+  }
+
   //Function that will be called when we quote button on the QuoteBox component is pressed
 
   handleClick = () => {
@@ -35,6 +46,7 @@ class App extends Component {
     return (
       <div>
         <QuoteBox 
+        color= {this.getRandomColor(256)}
         quote={this.state.quote}
         author={this.state.author}
         handleClick={this.handleClick}

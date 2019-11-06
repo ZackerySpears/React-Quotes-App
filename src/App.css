@@ -1,22 +1,41 @@
-.App {
+body {
+  font-family: 'Supermercado One', cursive;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
+h1 {
+  font-size:35px;
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+.quoteInside {
+  background-color: white;
+  text-align: center;
+  margin-top: 200px;
+  border-radius: 10px;
+  display: block;
+  padding: 0;
+  width: 1000px;
+  margin-left: 215px;
+  border: 3px black solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.quoteButton {
+  font-size: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.quoteButton:hover {
+  background-color: lightslategray;
   color: white;
+  transition: 2s;
+  transform: rotate(360deg);
 }
 
-.App-link {
-  color: #09d3ac;
+.quoteButton:focus{
+  outline:none ;
 }
